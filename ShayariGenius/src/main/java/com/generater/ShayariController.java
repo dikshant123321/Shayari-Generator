@@ -25,9 +25,9 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 public class ShayariController {
 //    private static final String OPENAI_API_URL = "https://api.openai.com/v1/engines/gpt-3.5/completions";
 //	private static final String OPENAI_API_URL = "https://api.openai.com/v1/engines/gpt-3.5-turbo/completions";
-	private static final String OPENAI_API_URL = "https://api.openai.com/v1/engines/text-davinci-003/completions";
-
-    private static final String OPENAI_API_KEY = "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";
+//	private static final String OPENAI_API_URL = "https://api.openai.com/v1/engines/text-davinci-003/completions";
+	 private static final String OPENAI_API_URL = "https://api.openai.com/v1/engines/davinci/completions";
+    private static final String OPENAI_API_KEY = "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";
     
     @GetMapping("/shayari/{keyword}")
     public String generateShayari(@PathVariable String keyword) throws JsonMappingException, JsonProcessingException {
