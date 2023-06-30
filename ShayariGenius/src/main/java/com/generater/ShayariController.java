@@ -15,6 +15,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.client.RestTemplate;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.JsonMappingException;
 import com.fasterxml.jackson.databind.JsonNode;
@@ -27,7 +28,8 @@ public class ShayariController {
 //	private static final String OPENAI_API_URL = "https://api.openai.com/v1/engines/gpt-3.5-turbo/completions";
 //	private static final String OPENAI_API_URL = "https://api.openai.com/v1/engines/text-davinci-003/completions";
 	 private static final String OPENAI_API_URL = "https://api.openai.com/v1/engines/davinci/completions";
-    private static final String OPENAI_API_KEY = "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";
+	 @JsonIgnore
+    private static final String OPENAI_API_KEY = "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";
     
     @GetMapping("/shayari/{keyword}")
     public String generateShayari(@PathVariable String keyword) throws JsonMappingException, JsonProcessingException {
