@@ -29,7 +29,7 @@ public class ShayariController {
 //	private static final String OPENAI_API_URL = "https://api.openai.com/v1/engines/text-davinci-003/completions";
 	 private static final String OPENAI_API_URL = "https://api.openai.com/v1/engines/davinci/completions";
 	 @JsonIgnore
-    private static final String OPENAI_API_KEY = "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";
+    private static final String OPENAI_API_KEY = "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";
     
     @GetMapping("/shayari/{keyword}")
     public String generateShayari(@PathVariable String keyword) throws JsonMappingException, JsonProcessingException {
